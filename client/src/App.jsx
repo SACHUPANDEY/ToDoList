@@ -1,4 +1,3 @@
-// src/App.jsx
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Login from "./pages/Login";
@@ -17,8 +16,6 @@ export default function App() {
           <Route path="/" element={<Login />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-
-          {/* Protected Routes */}
           <Route
             path="/dashboard"
             element={
@@ -27,7 +24,6 @@ export default function App() {
               </PrivateRoute>
             }
           />
-
           <Route
             path="/admin"
             element={
